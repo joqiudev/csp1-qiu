@@ -3,47 +3,153 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="./styles/style.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-	<title>Capstone 1 Project</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@300&display=swap" rel="stylesheet">
+	<title>Developer Portfolio</title>
 </head>
 <body>
 	<!-- NavBar -->
-	<div class="navbar-main d-flex vw-100 container-fluid">
-	  <a class="navbar mr-auto pl-3" href="#">
-	    Joanna Qiu
-	  </a>
-	  <div class="nav-pills navbar d-flex justify-content-end">
-	  	<a href="#" class="list px-1">About Me</a>
-	  	<div class="list nav-item dropdown px-1">
-	  		<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My Interests</a>
-	  		<div class="dropdown-menu">
-	  			<a class="dropdown-item" href="#"> Apply Now </a>
-	  		</div>
-	  	</div>  	
-	  	<div class="list nav-item dropdown px-1">
-	  		<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Location</a>
-	  		<div class="dropdown-menu">
-	  			<a class="dropdown-item" href="#"> Manila </a>
-	  			<a class="dropdown-item" href="#"> Cebu </a>
-	  			<a class="dropdown-item" href="#"> Davao </a>
-	  		</div>
-	  	</div>  
-	  	<a href="#" class="list px-1">Contact Me</a>
-	  </div>
-	</div>
+	<nav class="navbar navbar-expand-lg sticky-top">
+  		  <a class="navbar-brand" href="#landing">Joanna Qiu</a>
+  		  <button class="fancy-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  		    <span class="navbar-toggler-icon"></span>
+  		  </button>
+  		  <div class="collapse navbar-collapse" id="navbarNav">
+  		    <ul class="navbar-nav ml-auto">
+  		      <li class="nav-item active">
+  		        <a class="nav-link" href="#landing">About Me</a>
+  		      </li>
+  		      <li class="list nav-item dropdown px-1">
+  		      	<a href="#interests" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My Interests</a>
+  		      	<div class="dropdown-menu">
+  		      		<a id="items" class="dropdown-item" href="#myinterests">K-Pop </a>
+  		      		<a id="items" class="dropdown-item" href="#myinterests">Books </a>
+  		      		<a id="items" class="dropdown-item" href="#myinterests">Travel </a>
+  		      	</div>	
+  		      </li>
+  		      <li class="nav-item">
+  		        <a class="nav-link" href="#contact">Contact Me</a>
+  		      </li>
+  		    </ul>
+  		  </div>
+  		</nav>
 	<!-- Main Page -->
-	<div class="main-page">
-		<div>
-			<img src="ocean.jpeg" class="vw-100">
-			<h1 class="text-center"> Lorem ipsum dolor sit amet</h1>
+	<div id="landing" class="jumbotron big-banner vh-100">
+		<div class=" min-vh-100">
+			<img class="my-photo img-fluid mx-auto d-block my-auto" src="./images/me.jpeg"> 
+				<div class="main text-center mx-auto mt-3">
+					<h2>Joanna Qiu</h2>
+					<h4>Aspiring Web Developer</h4>
+					<h5>Welcome to my Page!</h5>
+					<p> I'm Joanna Qiu and I'm Filipino-Chinese, born and raised in the Philippines. I'm turning 27 years old this year.</p>
+					<p> Right now, I am a purchasing associate in a Canadian company.</p>
+				</div>
 		</div>
-		
 	</div>
 
+	<!-- My Interests -->
+
+	<div id="myinterests" class="container-fluid text-center">
+	    <h3 class="interests my-auto pt-5">My Interests</h3>
+
+	    <div class="row">
+	        <div class="col-sm-6 order-2 order-md-1 order-lg-1 offset-3 offset-md-0 offset-lg-0">
+	            <h5 class="px-5 pt-5">K-Pop</h5>
+	            <p class="text-justify p-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	        </div>
+	        <div class="col-7 col-md-6 order-1 order-md-2 order-lg-2 offset-3 offset-md-0 offset-lg-0">
+	        <img class="image img-fluid pr-5 py-5"src="./images/bts.jpeg"/>
+	        </div>
+	    </div>
+	    <!-- K-pop End -->
+
+	    <!-- Books Start -->
+	    <div class="row">
+	        <div class="col-sm-6 order-2 order-md-2 order-lg-2 offset-3 offset-md-0 offset-lg-0">
+	            <h5 class="pt-5">Books</h5>
+	            <p class="text-justify py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	        </div>
+	        <div class="col-8 col-md-6 order-1 order-md-1 order-lg-1 offset-2 offset-md-0 offset-lg-0">
+	            <img class="image img-fluid pt-5" src="./images/books.jpeg"/>
+	        </div>
+	    </div>
+	    <div class="row">
+	        <div class="col-sm-6 order-2 order-md-1 order-lg-1 offset-3 offset-md-0 offset-lg-0">
+	            <h5 class="px-5 pt-5">Travel</h5>
+	            <p class="text-justify p-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	        </div>
+	        <div class="col-7 col-md-6 order-1 order-md-2 order-lg-2 offset-3 offset-md-0 offset-lg-0">
+	        <img class="image img-fluid pr-5 py-5"src="./images/travel.jpeg"/>
+	        </div>
+	    </div>
+
+	<!-- Contact Me -->
+
+	<div id="contact" class="container-fluid text-center jumbotron big-banner vh-100">
+		<h3 class="contact my-auto text-light">Get In Touch</h3>
+		<div class="container">
+			<form class="bg-info text-white col-sm-12 col-md-8 col-lg-8 col-xl-4 offset-md-2 offset-sm-0 offset-lg-4">
+					<div class="form-row">
+					  <div class="col mt-2">
+					   <label for="Name">Name</label>
+					    <input type="text" class="form-control" placeholder="Name">
+					  </div>
+				 </div>
+				  <div class="form-group pt-1 mt-2">
+				    <label for="Email">Email address</label>
+				    <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="name@example.com">
+				  </div>
+				  <div class="form-row">
+					    <div class="col">
+					    	<label for="ContactNumber">Contact Number</label>
+					      <input type="text" class="form-control" placeholder="+63 900 000 0000">
+					    </div>
+					  </div>
+					   <div class="form-group mt-2">
+					       <label for="Message">Message</label>
+					       <textarea class="form-control" id="Message" rows="5"></textarea>
+					     </div>
+				 <!-- Button trigger modal -->
+				 <button type="button" class="btn btn-light mb-3" data-toggle="modal" data-target="#exampleModal">
+				   Submit
+				 </button>
+				<!-- Modal -->
+				<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title text-dark" id="exampleModalLabel">Thank you for contacting me!</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body text-dark">
+				        I will reply back as soon as possible.
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</form>
+		</div>
+
+
+		<!-- Footer -->
+		<footer class="mt-5">
+		    <span>Terms of Service</span>
+		    <span>|</span>
+		    <span>Privacy Policy</span>
+		    <span>|</span>
+		    <span>&copy; All Rights Reserved</span>
+		</footer>
 
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
