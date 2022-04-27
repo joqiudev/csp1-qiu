@@ -3,7 +3,6 @@
 	padding: 0;
 }
 
-
 .navbar{
 	color: dodgerblue ;
 	font-family: 'Lobster Two', cursive;
@@ -11,21 +10,7 @@
 	background-color: white;
 }
 
-.nav-item{
-	list-style-type: none;
-	font-size: 18px;
-	color: dodgerblue;
-	font-family: 'Raleway', sans-serif;
-}
-
-.list{
-	list-style-type: none;
-	font-size: 18px;
-	color: dodgerblue;
-	font-family: 'Raleway', sans-serif;
-}
-
-#items{
+.nav-item, .list, #items, form, footer{
 	list-style-type: none;
 	font-size: 18px;
 	color: dodgerblue;
@@ -33,7 +18,7 @@
 }
 
 .fancy-toggler.navbar-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='dodgerblue' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(30,144,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .fancy-toggler.navbar-toggler {
@@ -43,17 +28,20 @@
 .fancy-toggler.navbar-toggler:focus {
   outline-color: dodgerblue;
 }
-.big-banner {
+
+.bg-image {
   background: url('../images/waves.jpeg') no-repeat center center fixed;
   webkit-background-size: cover;
   moz-background-size: cover;
   background-size: cover;
   o-background-size: cover;
+  padding-bottom: 10px;
 }
 
 .my-photo{
 	width: 250px;
 	height: 360px;
+	padding-top: 15px;
 }
 
 h2, h4, h3, h5, p {
@@ -72,17 +60,17 @@ h2, h4, h3, h5, p {
 	border-radius: 50%;
 }
 
-footer{
-	padding: 0.7rem;
-}
-
-footer span{
-	margin-left: 0.5rem;
-	margin-right: 0.5rem;
-}
 
 ul {
 	list-style-type: none;
 }
 
+.contact{
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
 
+.interestheader{
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
